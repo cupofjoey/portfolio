@@ -3,16 +3,22 @@
 <head>
 	<title>Joe Hill Portfolio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body ng-app='portfolioApp'>
 	<div>
 		<a href="#">Home</a>
     	<a href="#about">About</a>
+    	<a href="#twitch">Twitch</a>
+    	<a href="#calc">Calculator</a>
 		<div ng-view ></div>
 	</div>
 
-	<script type="text/javascript" src="app.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="twitch/twitch.js"></script>
+	<script type="text/javascript" src="calculator/calc.js"></script>	
 </body>
 </html>
