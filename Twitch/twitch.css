@@ -1,10 +1,13 @@
+
 .stream-card {
   border: blue;
   margin: 2px;
   background-color: teal;
 }
 
+
 body {
+
   background-color: darkgrey;
 }
 .offline{

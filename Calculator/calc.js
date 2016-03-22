@@ -16,6 +16,7 @@ app.controller("calculatorCtrl", function($scope){
         this.result = 0;
         this.operand = '';
         this.operation = '';        
+
     };
     Calc.prototype = {
         constructor: Calc,
@@ -62,10 +63,11 @@ app.controller("calculatorCtrl", function($scope){
         },
         on_input: function (character) {
             this.add_input(character);
-            $scope.output = this.get_operand();
+        $scope.output = this.get_operand();
         },   
     };
     var calculator = new Calc();
     $scope.output = calculator.result;
+
 });
 
