@@ -1,0 +1,23 @@
+{
+  "name": "frontendport",
+  "version": "1.0.0",
+  "description": "Front End Showcase",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cupofjoey/portfolio.git"
+  },
+  "author": "Joe Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cupofjoey/portfolio/issues"
+  },
+  "homepage": "https://github.com/cupofjoey/portfolio#readme"
+}
