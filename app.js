@@ -17,13 +17,19 @@ app.config(function($routeProvider) {
 
         .when('/twitch', {
             templateUrl : 'twitch/twitch.html',
-            controller  : 'twitchCtrl',
-            css: 'twitch/twitch.css'
+            controller  : 'twitchCtrl'
+            // css: 'twitch/twitch.css'
         })
 
         .when('/calculator', {
             templateUrl : 'calculator/calc.html',
             controller  : 'calculatorCtrl'
+        })    
+
+        .when('/shortener', {
+            templateUrl : 'shortener/shortener.html',
+            controller  : 'shortenerCtrl',
+            css: 'shortener/shortener.css'     
 
         });
 });
