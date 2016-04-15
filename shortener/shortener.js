@@ -1,11 +1,14 @@
 app.controller("shortenerCtrl", function($scope, $http) {
-  $scope.message = "Hello Shortener!"
-  var dummyurl = "https://url-shortjoehill.herokuapp.com/urls/new?fullUrl=http://www.google.com"
+  $scope.api = "https://url-shortjoehill.herokuapp.com/urls/"
 
+  $scope.message = "Hello Shortener"
+  $scope.inputUrl = "";
+  $scope.shortCode = "";
 
-  $scope.testFunction = function(){
-  	$http.get(dummyurl).then(function(response) {
-  		console.log(response);
+  $scope.createUrl = function(fullUrl){
+  	$http.get($scope.api + "new?fullUrl=" + fullUrl).then(function(response) {
+  		console.log(JSON.stringify(response));
+  		$scope.shortCode = response.data.shortUrl;
   	}, function(error) {
   		console.log(error);
   	})
@@ -16,5 +19,8 @@ app.controller("shortenerCtrl", function($scope, $http) {
 
 
 
-
+//Writing
 // https://url-shortjoehill.herokuapp.com/urls/new?fullUrl=http://test.com
+
+//Retrieving
+// https://url-shortjoehill.herokuapp.com/urls/data.shortener

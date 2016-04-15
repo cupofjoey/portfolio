@@ -1,3 +1,8 @@
 <h1>Welcome to the Shortener</h1>
+<h2>Enter the URL You Would Like to Shorten</h2>
+<input ng-model="inputUrl" type="text"></input>
+<button ng-click="createUrl(inputUrl)">Click Me 2 Shorten</button>
 
-<button ng-click="testFunction()">Click Me 2 Shorten</button>
+<h3><a ng-show="shortCode" target="_blank" ng-href="{{api + shortCode}}">{{api + shortCode}}</a></h3>
+
+<div></div>

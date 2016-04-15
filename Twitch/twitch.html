@@ -1,6 +1,7 @@
 <div class="container" ng-app="twitchStream" ng-controller="twitchCtrl">
 
   <h2>Now Showing {{results.length}} Twitch TV Streams</h2>
+<div class= "w3 container">
   <div ng-repeat="result in results | orderBy: 'stream'" class="row">
     <div class="col-sm-12 stream-card" ng-class="result.stream ? 'online' : 'offline'">
       <img ng-if="result.stream" ng-src="{{result.stream.channel.logo}}"/>
@@ -10,7 +11,7 @@
      
       <span ng-if="!result.stream && !result.error"> is Offline</span>
       <span ng-if="result.error">This User is not found</span>
-
+      </div>
     </div>
   </div>
 </div>
