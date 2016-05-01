@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html ng-app='portfolioApp'>
 <head>
-	<title>Joe Hill Portfolio</title>
+	<title>Welcome to JKH3</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
 </head>
 <body>
 	<div>
-		<a href="#">Home</a>
-    	<a href="#about">About</a>
-    	<a href="#twitch">Twitch</a>
-    	<a href="#calculator">Calculator</a>
-    	<a href="#shortener">Shortener</a>
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="#">Home</a></li>
+    	<li><a href="#about">About</a></li>
+    	<li><a href="#twitch">Twitch</a></li>
+    	<li><a href="#calculator">Calculator</a></li>
+    	<li><a href="#shortener">Shortener</a></li>
+    	<li><a href="#headparse">HeadParse</a></li>
+    	</ul>
 		<div ng-view ></div>
 	</div>
 
@@ -23,6 +27,7 @@
 	<script type="text/javascript" src="app.js"></script>
 	<script type="text/javascript" src="twitch/twitch.js"></script>
 	<script type="text/javascript" src="calculator/calc.js"></script>
-	<script type="text/javascript" src="shortener/shortener.js"></script>	
+	<script type="text/javascript" src="shortener/shortener.js"></script>
+	<script type="text/javascript" src="headparse/headparse.js"></script>	
 </body>
 </html>

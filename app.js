@@ -25,13 +25,18 @@ app.config(function($routeProvider) {
             templateUrl : 'calculator/calc.html',
             controller  : 'calculatorCtrl'
         })    
-
         .when('/shortener', {
             templateUrl : 'shortener/shortener.html',
             controller  : 'shortenerCtrl',
-            css: 'shortener/shortener.css'     
-
+            css : 'shortener/shortener.css'     
+        })
+        .when('/headparse', {
+            templateUrl : 'headparse/headparse.html',
+            controller : 'headparseCtrl',
+            css : 'headparse/headparse.css'
         });
+    
+
 });
 
 
