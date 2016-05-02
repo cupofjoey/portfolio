@@ -1,4 +1,4 @@
-<div class="container" ng-app="twitchStream" ng-controller="twitchCtrl">
+<div class="container" id="twitch" ng-app="twitchStream" ng-controller="twitchCtrl">
 
   <h2>Now Showing {{results.length}} Twitch TV Streams</h2>
   <div ng-repeat="result in results | orderBy: 'stream'" class="row">

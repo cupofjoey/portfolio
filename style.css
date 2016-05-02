@@ -1,12 +1,58 @@
+.navbar-default .navbar-nav>li>a {
+color: #777;
+text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  color: #f74d65;
+}
+header{
+  /*background: url(../pics/JKH3Logo3.png);
+  background-height: 100px;
+  background-width:width: 500px;
+  background-repeat: no-repeat;*/
+}
+.section_overlay{
+  background: rgba(250,250,250, .5);
+}
+.home_text{
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+.home_text h2{
+  color: #010101;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 13px;
+}
+.home_text p{
+  color: #404040;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.home_text img{}
+.scroll_down{
+  padding-bottom: 50px;
+}
+.scroll_down h4{
+  font-size: 12px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+/*twitch tv page*/
+
+#twitch {
+  background-color: white;
+  padding: 30px;
+}
+
 .stream-card {
   border: blue;
   margin: 2px;
   background-color: teal;
 }
 
-body {
-  background-color: white;
-}
 .offline{
  background-color: #2c384e;
   color: white;
@@ -37,3 +83,62 @@ img {
     border: 2px solid navy;
     margin: 2px;
 }*/
+
+footer{
+  background-color: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer_logo{}
+.footer_logo img{}
+.social{
+  padding-top: 65px;
+}
+.social h2{
+text-transform: uppercase;
+font-size: 16px;  
+}
+ul.icon_list{
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: center;
+margin-top: 20px;
+}
+ul.icon_list li{
+display: inline;
+padding-left: 3px;
+padding-right: 3px;
+}
+ul.icon_list li a{
+display: inline-block;
+color: #636363;
+border: 1px solid #636363;
+border-radius: 50%;
+text-align: center;
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 28px;
+transition: all 1s;
+}
+ul.icon_list li a:hover{
+  color: #f73b56;
+  border-color:#f73b56; 
+}
+.copyright_text{
+padding-top: 80px;  
+}
+.copyright_text p{
+color: #636363;
+font-size: 14px;
+text-transform: uppercase;
+margin-bottom: 0px;
+letter-spacing: 0px;
+}
+.copyright_text a{
+  color:#f73b56;
+  text-transform:uppercase;
+  font-weight:700;
+  text-decoration:none;
+  }
