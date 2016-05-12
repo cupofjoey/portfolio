@@ -7,59 +7,50 @@
 
 </head>
 <body>
-   <header id="HOME" style="background-position: 50% -125px;">
-	        <div class="section_overlay">
-	            <nav class="navbar navbar-default navbar-fixed-top">
-	              <div class="container">
-	                <!-- Brand and toggle get grouped for better mobile display -->
+	<header>
+        <div class="section_overlay">
+            <nav class="navbar navbar-default navbar-fixed-top">
+	            <div class="container">	                
 	                <div class="navbar-header">
-	                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                    <span class="sr-only">Toggle navigation</span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                  </button>
-	                  <a class="navbar-brand" href="#"><img src="pics/JKH3Logo3.png" alt=""></a>
+	                  	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    	<span class="sr-only">Toggle navigation</span>
+	                    	<span class="icon-bar"></span>
+	                    	<span class="icon-bar"></span>
+	                    	<span class="icon-bar"></span>
+	                  	</button>
+	                  	<a class="navbar-brand" href="#"><img src="pics/JKH3Logo3.png" alt=""></a>
 	                </div>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Home</a></li>
-    					<li><a href="#about">About</a></li>
+						<li><a href="#">Home</a></li>    					
     					<li><a href="#twitch">Twitch</a></li>
     					<li><a href="#calculator">Calculator</a></li>
     					<li><a href="#shortener">Shortener</a></li>
     					<li><a href="#headparse">HeadParse</a></li>
-    					</ul>
-					<div ng-view >
+    				</ul>	
 				</div>
-			</div>
+			</nav>
 		</div>
-	</nav>
-		<div class="container">
-	                <div class="row">
-	                    <div class="col-md-12 text-center">
-	                        <div class="home_text wow fadeInUp animated">
-	                            <h2>Welcome to JKH3</h2>
-	                            <p>Front End and Back End Developer</p>
-	                            <img src="pics/shape.png" alt="">                        
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-md-12 text-center">
-	                        <div class="scroll_down">
-                            <a href="#SERVICE"><img src="pics/scroll.png" alt=""></a>
-	                            <h4>Scroll Down</h4>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>            
-	        </div>  
-	    </section>         
-</header>
-
+	</header>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="home_text wow">
+                    <div ng-view ></div>
+				</div>	                    	
+            </div>
+            <div class="social">
+		        <h2>Follow Me on Here</h2>
+		        <ul class="icon_list">
+		            <li><a href="http://www.facebook.com/abdullah.noman99"target="_blank"><i class="fa fa-facebook"></i></a></li>
+		            <li><a href="http://www.twitter.com/absconderm"target="_blank"><i class="fa fa-twitter"></i></a></li>
+		            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+		            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+		            <li><a href="http://www.dribbble.com/abdullahnoman"target="_blank"><i class="fa fa-dribbble"></i></a></li>
+		        </ul>
+		    </div>
+        </div>
+    </div>	               
+	                    	        
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 	<script   src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous">
@@ -69,47 +60,6 @@
 	<script type="text/javascript" src="twitch/twitch.js"></script>
 	<script type="text/javascript" src="calculator/calc.js"></script>
 	<script type="text/javascript" src="shortener/shortener.js"></script>
-	<script type="text/javascript" src="headparse/headparse.js"></script>	
-
-<footer>
-    <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="footer_logo   wow fadeInUp animated">
-                        <img src="pics/JKH3Logo3.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center   wow fadeInUp animated">
-                    <div class="social">
-                        <h2>Follow Me on Here</h2>
-                        <ul class="icon_list">
-                            <li><a href="http://www.facebook.com/abdullah.noman99"target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="http://www.twitter.com/absconderm"target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="http://www.dribbble.com/abdullahnoman"target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="copyright_text   wow fadeInUp animated">
-                        <p>&copy; brandy 2015.All Right Reserved By <a href="http://www.themeforest.net/user/thecodecafe"target="_blank">Code Cafe Team</a></p>
-                        <p>Made with love for creative people.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
+	<script type="text/javascript" src="headparse/headparse.js"></script>
 </body>
 </html>
