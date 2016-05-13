@@ -17,7 +17,8 @@ app.config(function($routeProvider) {
 
         .when('/calculator', {
             templateUrl : 'calculator/calc.html',
-            controller  : 'calculatorCtrl'
+            controller  : 'calculatorCtrl',
+            css: 'calculator/calc.css'
         })    
         .when('/shortener', {
             templateUrl : 'shortener/shortener.html',

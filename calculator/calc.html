@@ -1,7 +1,7 @@
 <h2>OOP Calculator</h2>
 
 
-<div id="calculator">
+<!-- <div id="calculator">
   <form action='index.html' method='post' name='calc'>
     <input type='text' disabled='true' name='output' id='output' ng-model="output"/>
     <table id="buttontable">
@@ -12,5 +12,17 @@
       </tr>
     </table>
   </form>
+</div> -->
+
+
+
+<div id="calculator">        
+    <div class="result"><p id='output'>{{output}}</p></div>
+    <div class="clear" ng-click="pushButton('C')">C</div>
+    
+    <div ng-repeat="row in buttons">
+      <span class="calc-button" ng-repeat="button in row" ng-click="pushButton(button.value)">
+        {{button.value}}
+      </span>
+    </div>
 </div>
-      
