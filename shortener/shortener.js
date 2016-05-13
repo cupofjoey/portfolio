@@ -1,4 +1,5 @@
 app.controller("shortenerCtrl", function($scope, $http) {
+  $scope.buttonMessage = "Create URL";
   $scope.api = "https://url-shortjoehill.herokuapp.com/urls/"
 
   $scope.message = "Hello Shortener"
@@ -7,16 +8,18 @@ app.controller("shortenerCtrl", function($scope, $http) {
   $scope.errorFlag = false;
 
   $scope.createUrl = function(fullUrl){
+    $scope.buttonMessage = "Working...";
   	$scope.errorFlag = false;
   	$http.get($scope.api + "new?fullUrl=" + fullUrl).then(function(response) {
+      $scope.buttonMessage = "Create URL";
   		console.log(JSON.stringify(response));
   		$scope.shortCode = response.data.shortUrl;
   	}, function(error) {
+      $scope.buttonMessage = "Create URL";
   		$scope.errorFlag = true;
   		console.log(error);
   	})
   };
-
 });
 
 

@@ -11,8 +11,8 @@ app.config(function($routeProvider) {
 
         .when('/twitch', {
             templateUrl : 'twitch/twitch.html',
-            controller  : 'twitchCtrl'
-            // css: 'twitch/twitch.css'
+            controller  : 'twitchCtrl',
+            //css: 'twitch/twitch.css'
         })
 
         .when('/calculator', {
