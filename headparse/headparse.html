@@ -1,4 +1,13 @@
-<button ng-click="getHeader()">Click Here for Cool Info</button>
+<h2>
+	Request Header Metadata
+	<a target="_blank" href="https://www.github.com/cupofjoey/header-ms2">
+		<img class="repo-icon" src="/pics/github.svg">
+	</a>       	
+</h2>
+
+<button class="btn btn-primary" ng-click="getHeader()">
+	{{buttonMessage}}
+</button>
 <div ng-show="headers.ipaddress">
 	<p>IP: {{headers.ipaddress}}</p>
 	<p>Language: {{headers.language}}</p>

@@ -1,0 +1,20 @@
+<h2>
+    OOP Calculator
+    <a target="_blank" href="https://www.github.com/cupofjoey/pocketcalc">
+		<img class="repo-icon" src="/pics/github.svg">
+	</a>       
+	<a target="_blank" href="http://codepen.io/cupofjoey/pen/xZpdEE">
+		<img class="repo-icon" src="/pics/codepen.svg">
+	</a>    
+</h2>
+
+<div id="calculator">        
+    <div class="result"><p id='output'>{{output}}</p></div>
+    <div class="clear" ng-click="pushButton('C')">C</div>
+    
+    <div ng-repeat="row in buttons">
+        <span class="calc-button" ng-repeat="button in row" ng-click="pushButton(button.value)">
+            {{button.value}}
+        </span>
+    </div>
+</div>

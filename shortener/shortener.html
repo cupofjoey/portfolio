@@ -1,13 +1,23 @@
-<h1>Welcome to the Shortener</h1>
-<h2>Enter the URL You Would Like to Shorten</h2>
-<!-- <input ng-model="inputUrl" type="text"></input>
-<button ng-click="createUrl(inputUrl)">Click Me 2 Shorten</button> -->
+<h2>
+	URL Shortener
+	<a target="_blank" href="https://www.github.com/cupofjoey/urlshort">
+		<img class="repo-icon" src="/pics/github.svg">
+	</a>       	
+</h2>
 
 <h4 id="errorMessage" ng-show="errorFlag">Please Enter Your URL in the following format: https://www.yoururl.com</h4>
-<form novalidate>
-	<input ng-model="inputUrl" type="text"></input>
-	<input ng-click="createUrl(inputUrl)" type="submit" value="Create URL"></input>
-</form>
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<div class="input-group">
+			<input type="text" class="form-control" ng-model="inputUrl">
+			<span class="input-group-btn">
+				<button ng-click="createUrl(inputUrl)" class="btn btn-default" type="button">{{buttonMessage}}</button>
+			</span>
+		</div>
+	</div>
+	<div class="col-md-3"></div>
+</div>
 
 <h3><a ng-show="shortCode" target="_blank" ng-href="{{api + shortCode}}">{{api + shortCode}}</a></h3>
 

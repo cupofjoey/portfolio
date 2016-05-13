@@ -1,0 +1,20 @@
+<h2>
+    TwitchTV Status
+    <a target="_blank" href="https://www.github.com/cupofjoey/twitchtvproj">
+        <img class="repo-icon" src="/pics/github.svg">
+    </a>       
+    <a target="_blank" href="http://codepen.io/cupofjoey/pen/RarrgX">
+        <img class="repo-icon" src="/pics/codepen.svg">
+    </a>    
+</h2>
+<h4>Now Showing {{results.length}} Twitch TV Streams</h4>
+<div ng-repeat="result in results | orderBy: 'stream'" class="row">
+    <div class="col-sm-12 stream-card" ng-class="result.stream ? 'online' : 'offline'">
+        <img class="user-profile" ng-if="result.stream" ng-src="{{result.stream.channel.logo}}"/>
+        <span ng-if="!result._links">{{result.user}}</span>
+        <a target="_blank" ng-if="result._links" ng-href="http://www.twitch.tv/{{result.user}}">{{result.user}}</a>
+        <span ng-if="result.stream"> {{result.stream.channel.game}}: {{result.stream.channel.status}}:</span>
+        <span ng-if="!result.stream && !result.error"> is Offline</span>
+        <span ng-if="result.error">This User is not found</span>
+    </div>
+</div>

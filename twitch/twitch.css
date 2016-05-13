@@ -1,17 +1,11 @@
 
-.stream-card {
-  border: blue;
-  margin: 2px;
+.stream-card {  
   background-color: teal;
+  margin: 2px;
 }
 
-
-body {
-
-  background-color: darkgrey;
-}
 .offline{
- background-color: #2c384e;
+  background-color: #2c384e;
   color: white;
 }
 
@@ -22,21 +16,18 @@ body {
 
 .row {
   width: auto ;
-  padding: auto;
-  border: solid darkblue;
-  border-width: 2px;
-  margin: 2px; 
+  padding: auto;   
 }
 
-img {
+.user-profile {
   border-radius: 50%;
   width: 50px;
-    height: 50px;
+  height: 50px;
 }
 
-div {
+/*div {
     width: 200px;
     padding: 2px;
     border: 2px solid navy;
     margin: 2px;
-}]
+}]*/

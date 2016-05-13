@@ -7,23 +7,18 @@ app.config(function($routeProvider) {
         .when('/', {
             templateUrl : 'pages/main.html',
             controller  : 'mainCtrl'
-        })
-
-        // route for the about page
-        .when('/about', {
-            templateUrl : 'pages/about.html',
-            controller  : 'aboutCtrl'
-        })
+        })        
 
         .when('/twitch', {
             templateUrl : 'twitch/twitch.html',
-            controller  : 'twitchCtrl'
-            // css: 'twitch/twitch.css'
+            controller  : 'twitchCtrl',
+            css: 'twitch/twitch.css'
         })
 
         .when('/calculator', {
             templateUrl : 'calculator/calc.html',
-            controller  : 'calculatorCtrl'
+            controller  : 'calculatorCtrl',
+            css: 'calculator/calc.css'
         })    
         .when('/shortener', {
             templateUrl : 'shortener/shortener.html',
@@ -44,11 +39,6 @@ app.config(function($routeProvider) {
 
 app.controller("mainCtrl", function($scope){
 	$scope.message = "Hello Main";
-
-});
-
-app.controller("aboutCtrl", function($scope){
-	$scope.message = "Hello About";
 
 });
 
