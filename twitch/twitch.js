@@ -1,4 +1,4 @@
-var users = ["freecodecamp", "storbeck","terakilobyte", "habathcx","RobotCaleb","thomasballinger","noobs2ninjas","beohoff", "brunofin", "comster404", "esl_sc2", "bul_weif"];
+var users = ["freecodecamp", "storbeck","terakilobyte", "thomasballinger","noobs2ninjas","beohoff", "esl_sc2", "bul_weif", "drdisrespectlive"];
 //I threw in my own Twitch Account, "bul_weif" for the heck of it. //
 var api = 'https://api.twitch.tv/kraken/streams/';
 
